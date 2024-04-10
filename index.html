@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend+Tera:wght@100..900&family=Lobster&family=Rajdhani:wght@300;400;500;600;700&family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <title>CARRITO DE LA COMPRA 🛒</title>
+  </head>
+
+  <body>
+    <div class="row my-5 justify-content-center">
+      <!-- Formulario 1 -->
+      <div class="col-4">
+        <h1>1-FRASE SALUDO ITERATIVO</h1>
+        <form id="formOne" action="/procesar_formulario" method="post">
+          <div class="mb-3">
+            <legend class="mb-5">JUEGA 🎰</legend>
+          </div>
+          <div class="my-5">
+            <label for="inputNombre" class="fs-3 form-label"
+              >Introduce tu nombre para que tu ordenador sea educado y te llame
+              por tu nombre
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNombre"
+              placeholder="tu nombre"
+            />
+          </div>
+          <div class="my-5">
+            <label for="inputFrecuencia" class="fs-3 form-label"
+              >Introduce el número de veces que deseas que tu ordenador te
+              salude y se despida de ti</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputFrecuencia"
+              placeholder="por ejemplo: 6"
+            />
+          </div>
+
+          <hr />
+          <h3 class="my-5" id="resultSaludo">FRASE DE SALUDO:</h3>
+          <h3 class="my-5" id="resultDespedida">FRASE DE DESPEDIDA:</h3>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >I agree to these <a href="#">Terms & Conditions</a></label
+            >
+          </div>
+          <button type="submit" class="btn btn-dark mt-4">PLAY</button>
+        </form>
+      </div>
+
+      <!-- Formulario 2 -->
+      <div class="col-4">
+        <h1>2-CALCULO OPERACIÓN A ELEGIR</h1>
+        <form id="formTwo" action="/procesar_formulario" method="post">
+          <div class="mb-3">
+            <legend class="mb-5">JUEGA 🎰</legend>
+          </div>
+          <div class="my-5">
+            <label for="inputNumeroOne" class="fs-3 form-label"
+              >Introduce 2 números que desees sumar o restar
+            </label>
+            <input
+              type="number"
+              class="form-control my-5"
+              id="inputNumeroOne"
+              placeholder="por ejemplo: 15"
+            />
+            <input
+              type="number"
+              class="form-control my-5"
+              id="inputNumeroTwo"
+              placeholder="por ejemplo: 8"
+            />
+          </div>
+          <hr />
+          <h3 class="my-5" id="result">RESULTADO:</h3>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >I agree to these <a href="#">Terms & Conditions</a></label
+            >
+          </div>
+          <button id="btnSuma" type="submit" class="btn btn-dark mt-4">
+            SUMAR
+          </button>
+          <button id="btnResta" type="submit" class="btn btn-dark mt-4">
+            RESTAR
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <!-- Link JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

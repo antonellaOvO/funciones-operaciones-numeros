@@ -1,0 +1,9 @@
+.row {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  gap: 200px;
+}
+
+legend {
+  font-weight: bold;
+}
