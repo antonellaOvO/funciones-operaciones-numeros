@@ -36,11 +36,11 @@ function sumar(event) {
   let suma = Number(inputNumeroOne.value) + Number(inputNumeroTwo.value);
   resultado.textContent = `RESULTADO: ${suma}`;
 }
-/*Esta función submit() es para realizar la suma*/
+/*Esta función submit() es para realizar la resta*/
 function restar(event) {
   event.preventDefault();
-  let suma = Number(inputNumeroOne.value) - Number(inputNumeroTwo.value);
-  resultado.textContent = `RESULTADO: ${suma}`;
+  let resta = Number(inputNumeroOne.value) - Number(inputNumeroTwo.value);
+  resultado.textContent = `RESULTADO: ${resta}`;
 }
 
 /*Este evento es para hacer el cálculo (ejecutar la función correspondiente) cuando clica sobre el botón "Suma" y "Resta"*/
